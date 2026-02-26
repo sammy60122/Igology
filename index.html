@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弈境圍棋訓練中心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自訂字體與平滑滾動 */
+        html { scroll-behavior: smooth; font-family: 'Noto Sans TC', sans-serif; }
+        .bg-wood { background-color: #D4A373; } /* 圍棋盤的木頭質感色 */
+        .text-wood { color: #D4A373; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">⚫ 弈境圍棋 ⚪</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 font-medium">關於我們</a>
+                    <a href="#courses" class="text-gray-600 hover:text-gray-900 font-medium">課程方案</a>
+                    <a href="#coach" class="text-gray-600 hover:text-gray-900 font-medium">教練介紹</a>
+                    <a href="#contact" class="bg-wood text-white px-4 py-2 rounded-md hover:bg-yellow-700 font-medium transition">預約課程</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-24 pb-12 md:pt-32 md:pb-24 bg-gray-900 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-wider">專注於每一步的淬鍊</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">結合深厚歷史底蘊與現代科學化覆盤，提供最高質感的圍棋教學環境。</p>
+            <a href="#contact" class="inline-block bg-wood text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-700 transition">立即加入官方 Line 預約</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">關於我們</h2>
+            <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center">
+                我們深信圍棋不僅僅是一盤棋，更是思維與品格的對話。從江戶時代見證歷史轉捩點的「耳赤之局」，到現代 AI 輔助的精準運算，圍棋的內涵不斷昇華。<br><br>
+                在這裡，我們拒絕粗製濫造的學習體驗。教室全面採用頂級厚實的榧木棋盤與天然蛤碁石，我們認為學習環境與器具必須具備極致的質感，讓您在每一次落子時，都能感受到真實的重量與回饋。結合系統化、科學化的教學法，讓不論是初學者還是段位好手，都能在這裡找到突破自我的平靜。
+            </p>
+        </div>
+    </section>
+
+    <section id="courses" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-900">課程方案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-gray-900 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold mb-4">兒童啟蒙/級位班</h3>
+                    <p class="text-gray-600 mb-6">精心安排漸進式的學習內容，培養孩子的專注力、邏輯思考與面對挫折的抗壓力。</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✔️ 基礎規則與吃子技巧</li>
+                        <li>✔️ 禮儀與靜心訓練</li>
+                        <li>✔️ 趣味對弈與引導</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-gray-900 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold mb-4">段位研修班</h3>
+                    <p class="text-gray-600 mb-6">針對已有段位基礎的學員，進行深度佈局解析、中盤戰鬥與官子計算的強化訓練。</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✔️ 現代 AI 定石研究</li>
+                        <li>✔️ 實戰覆盤與盲點突破</li>
+                        <li>✔️ 賽事心理素質建立</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-[#D4A373] hover:shadow-md transition">
+                    <h3 class="text-xl font-bold mb-4">一對一客製化/指導棋</h3>
+                    <p class="text-gray-600 mb-6">由專業教練親自對弈指導，享受最高品質的安靜對弈空間，量身打造專屬的進步計畫。</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>✔️ 針對個人棋風調整</li>
+                        <li>✔️ 高階運算與大局觀指導</li>
+                        <li>✔️ 彈性預約上課時間</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coach" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-900">專業教練團隊</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/3">
+                    <div class="bg-gray-300 w-full h-80 rounded-lg flex items-center justify-center text-gray-500">
+                        [請在此替換您的專業形象照]
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-2">首席教練</h3>
+                    <p class="text-wood font-bold mb-4">專業圍棋教育者 / 訓練中心創辦人</p>
+                    <p class="text-gray-600 mb-4 text-justify">
+                        深刻了解學習圍棋過程中的瓶頸，致力於將深奧的棋理轉化為系統化的教學。我們不僅教授技術，更重視棋道精神的傳承。透過邏輯清晰的解析與高品質的教學環境，讓學員在黑白交錯中看見更廣闊的世界。
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded border-l-4 border-gray-900">
+                        <p class="font-bold mb-2">教學特色：</p>
+                        <p class="text-sm text-gray-600">結合 AI 科學化訓練 / 賽事心理素質建設 / 棋理與哲學引導</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6">準備好開始您的圍棋之旅了嗎？</h2>
+            <p class="mb-8 text-gray-400">點擊下方按鈕加入官方 Line，告訴我們您的學習需求，我們將為您安排最適合的課程。</p>
+            <a href="#" class="inline-block bg-[#06C755] text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-green-600 transition mb-8">
+                加入 Line 官方帳號
+            </a>
+            <div class="text-gray-500 text-sm">
+                <p>📍 地址：[請填寫您的教室地址]</p>
+                <p>🕒 營業時間：週一～週日 10:00 - 21:00</p>
+                <p class="mt-8">&copy; 2026 弈境圍棋訓練中心 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
